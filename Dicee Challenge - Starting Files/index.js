@@ -4,5 +4,13 @@ document.querySelector(".img1").setAttribute("src","images/dice"+randomNumber1+"
 document.querySelector(".img2").setAttribute("src","images/dice"+randomNumber2+".png");
 if(randomNumber1>randomNumber2)
 {
-  document.querySelector(".container").setAttribute("src","images/dice"+randomNumber1+".png");
+
+  document.querySelector(".container h1").innerHTML="<h1>Player 1 Won</h1>";
+}
+else if (randomNumber2>randomNumber1) {
+  document.querySelector(".container h1").innerHTML="<h1>Player 2 Won</h1>";
+}
+else
+{
+  document.querySelector(".container h1").innerHTML="<h1>Draw</h1>";
 }
